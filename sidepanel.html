@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="styles.css">
+    <title>ClarityPro Modes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <h2>ClarityPro Side Panel</h2>
-  <script src="sidepanel.js"></script>
+<body class="cp-side-panel">
+    <h1>ClarityPro Modes</h1>
+    <p>Select your professional context to specialize AI feedback:</p>
+    
+    <div id="mode-selector">
+        <button id="mode-sales" class="cp-mode-btn" data-mode="Sales">💰 Sales & Negotiation</button>
+        <button id="mode-legal" class="cp-mode-btn" data-mode="Legal">⚖️ Legal & Compliance</button>
+        <button id="mode-technical" class="cp-mode-btn" data-mode="Technical">💻 Technical Documentation</button>
+        <button id="mode-general" class="cp-mode-btn" data-mode="General">✍️ General (Clarity Only)</button>
+    </div>
+
+    <hr>
+    <p>Current Mode: <strong id="current-mode">General</strong></p>
+    
+    <p class="cp-note">To enter your API key, visit the Extension's Options page.</p>
+    
+    <script src="sidepanel.js"></script> 
 </body>
 </html>
